@@ -7,8 +7,8 @@ export default function SectionHeading({ eyebrow, title, subtext, className }) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
       className={className}
     >
       <span className="text-primary font-body text-sm font-semibold tracking-[0.2em] uppercase">

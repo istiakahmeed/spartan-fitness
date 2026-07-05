@@ -4,13 +4,14 @@
   --font-heading: var(--font-heading);
   --font-body: var(--font-body);
 
-  --color-primary: #D62828;
-  --color-primary-dark: #A31E1E;
-  --color-primary-light: #F04E4E;
-  --color-offwhite: #F8F5F0;
+  --color-primary: #FF5500;
+  --color-primary-dark: #CC4400;
+  --color-primary-light: #FF7733;
+  --color-offwhite: #F9F9FA;
   --color-surface: #FFFFFF;
-  --color-dark: #141414;
-  --color-muted: #6B6B6B;
+  --color-dark: #0B0B0C;
+  --color-dark-light: #1A1A1C;
+  --color-muted: #7E7E86;
 
   --animate-fade-up: fade-up 0.6s ease-out forwards;
   --animate-fade-in: fade-in 0.6s ease-out forwards;
@@ -34,4 +35,41 @@
   to {
     opacity: 1;
   }
+}
+
+/* Custom scrollbar for premium look */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0B0C;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A2A2E;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF5500;
+}
+
+/* Selection highlight */
+::selection {
+  background: #FF5500;
+  color: #FFFFFF;
+}
+
+/* Smooth custom styles */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-panel-dark {
+  background: rgba(11, 11, 12, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }

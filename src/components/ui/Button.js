@@ -9,7 +9,7 @@ export default function Button({
   ...props
 }) {
   const base =
-    "inline-flex items-center justify-center font-body font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2";
+    "relative overflow-hidden group inline-flex items-center justify-center font-body font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2";
 
   const variants = {
     primary: "bg-primary text-white hover:bg-primary-dark",
@@ -19,7 +19,9 @@ export default function Button({
 
   return (
     <button className={cn(base, variants[variant], className)} {...props}>
-      {children}
+      <span className="relative z-10">{children}</span>
+      {/* Shine sweep overlay */}
+      <span className="absolute inset-0 w-[200%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out pointer-events-none" />
     </button>
   );
 }

@@ -1,4 +1,5 @@
 import { Anton, Poppins } from "next/font/google";
+import SmoothScroll from "@/components/layout/SmoothScroll";
 import "./globals.css";
 
 const anton = Anton({
@@ -14,18 +15,20 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Spartan Gym",
-  description: "Premium fitness training for the relentless.",
+  title: "Spartan Fitness",
+  description: "Premium fitness centers in Dhaka. Stronger Every Day. Healthier for Life.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${anton.variable} ${poppins.variable} antialiased scroll-smooth`}
+      className={`${anton.variable} ${poppins.variable} antialiased`}
       style={{ scrollPaddingTop: "80px" }}
     >
-      <body className="bg-offwhite text-dark">{children}</body>
+      <body className="bg-offwhite text-dark">
+        <SmoothScroll>{children}</SmoothScroll>
+      </body>
     </html>
   );
 }

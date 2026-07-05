@@ -11,14 +11,17 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: "#D62828",
-          dark: "#A31E1E",
-          light: "#F04E4E",
+          DEFAULT: "#FF5500",
+          dark: "#CC4400",
+          light: "#FF7733",
         },
-        offwhite: "#F8F5F0",
+        offwhite: "#F9F9FA",
         surface: "#FFFFFF",
-        dark: "#141414",
-        muted: "#6B6B6B",
+        dark: {
+          DEFAULT: "#0B0B0C",
+          light: "#1A1A1C",
+        },
+        muted: "#7E7E86",
       },
       keyframes: {
         "fade-up": {
