@@ -191,7 +191,7 @@ export default function Footer() {
       <div className="border-t border-white/5 py-6">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-body text-[10px] text-white/30 uppercase tracking-widest text-center md:text-left">
-            &copy; {new Date().getFullYear()} Spartan Fitness. All rights reserved.
+            &copy; {new Date().getFullYear()} Spartan Fitness. All rights reserved. | Developed by <a href="https://stellarworm.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Stellar Worm</a>
           </p>
           <div className="flex gap-6">
             <a href="#pricing" className="font-body text-[10px] text-white/30 hover:text-primary uppercase tracking-widest transition-colors">
